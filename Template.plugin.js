@@ -3,7 +3,7 @@
  * @author LEON
  * @authorId 633223783204782090
  * @version 1.0.0
- * @description Шаблон для создания плагина.
+ * @description Template for creating a plugin.
 */
 
 module.exports = (() => {
@@ -12,7 +12,7 @@ module.exports = (() => {
             "name": "Name",
             "authors": [{"name":"LEON"}],
             "version": "1.0.0",
-            "description": "Шаблон для создания плагина"
+            "description": "Template for creating a plugin."
         }
     };
 
@@ -42,11 +42,11 @@ module.exports = (() => {
         stop() { }
     } : (([Plugin, Api]) => {
         const plugin = (Plugin, Api) => {
-            const { DOMTools } = Api; // Ваши импорты с апи.
+            const { DOMTools } = Api; // BDApi.
           
             return class Name extends Plugin {
                 onStart() {
-                    BdApi.alert('Плагин успешно запущен!');
+                    BdApi.alert('Plugin started!');
                 }
 
                 yourFunction1(arg1, arg2, ...args) {
